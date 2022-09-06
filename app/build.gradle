@@ -6,7 +6,7 @@ android {
         applicationId "com.junduk.android.dartsscoringsystem"
         minSdkVersion 14
         targetSdkVersion 31
-        versionCode 17
+        versionCode 18
         versionName "1.5.1.2"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
