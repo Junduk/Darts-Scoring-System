@@ -344,13 +344,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerOne();
                 } else if (scoreOne == 0) {
                     counter = 1;
-                    displayPlayerOne();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerOne();
                 } else {
                     displayPlayerOne();
                 }
@@ -362,13 +362,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerOne();
                 } else if (scoreOne == 0) {
                     counter = 1;
-                    displayPlayerOne();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerOne();
                 } else {
                     displayPlayerOne();
                 }
@@ -385,13 +385,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerTwo();
                 } else if (scoreTwo == 0) {
                     counter = 1;
-                    displayPlayerTwo();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerTwo();
                 } else {
                     displayPlayerTwo();
                 }
@@ -403,13 +403,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerTwo();
                 } else if (scoreTwo == 0) {
                     counter = 1;
-                    displayPlayerTwo();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerTwo();
                 } else {
                     displayPlayerTwo();
                 }
@@ -426,13 +426,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerThree();
                 } else if (scoreThree == 0) {
                     counter = 1;
-                    displayPlayerThree();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerThree();
                 } else {
                     displayPlayerThree();
                 }
@@ -444,13 +444,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerThree();
                 } else if (scoreThree == 0) {
                     counter = 1;
-                    displayPlayerThree();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerThree();
                 } else {
                     displayPlayerThree();
                 }
@@ -467,13 +467,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerFour();
                 } else if (scoreFour == 0) {
                     counter = 1;
-                    displayPlayerFour();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerFour();
                 } else {
                     displayPlayerFour();
                 }
@@ -482,7 +482,6 @@ public class RegularGame1 extends AppCompatActivity {
                 if (scoreFour < 0) {
                     scoreFour = num4;
                     counter = 1;
-                    displayPlayerFour();
                 } else if (scoreFour == 0) {
                     counter = 1;
                     displayPlayerFour();
@@ -492,6 +491,7 @@ public class RegularGame1 extends AppCompatActivity {
                     } else {
                         winner();
                     }
+                    displayPlayerFour();
                 } else {
                     displayPlayerFour();
                 }
@@ -508,13 +508,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerFive();
                 } else if (scoreFive == 0) {
                     counter = 1;
-                    displayPlayerFive();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerFive();
                 } else {
                     displayPlayerFive();
                 }
@@ -526,13 +526,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerFive();
                 } else if (scoreFive == 0) {
                     counter = 1;
-                    displayPlayerFive();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerFive();
                 } else {
                     displayPlayerFive();
                 }
@@ -549,13 +549,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerSix();
                 } else if (scoreSix == 0) {
                     counter = 1;
-                    displayPlayerSix();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerSix();
                 } else {
                     displayPlayerSix();
                 }
@@ -567,13 +567,13 @@ public class RegularGame1 extends AppCompatActivity {
                     displayPlayerSix();
                 } else if (scoreSix == 0) {
                     counter = 1;
-                    displayPlayerSix();
                     if (equal) {
                         collectEndDarts();
                         activateEndPhase = true;
                     } else {
                         winner();
                     }
+                    displayPlayerSix();
                 } else {
                     displayPlayerSix();
                 }
@@ -820,6 +820,7 @@ public class RegularGame1 extends AppCompatActivity {
             for (int j = 0; j <= 5; j++) {
                 if (p[i] == tieBreakPlayers[j]) {
                     p[i] = 0;
+                    break;
                 }
             }
         }
