@@ -482,6 +482,7 @@ public class RegularGame1 extends AppCompatActivity {
                 if (scoreFour < 0) {
                     scoreFour = num4;
                     counter = 1;
+                    displayPlayerFour();
                 } else if (scoreFour == 0) {
                     counter = 1;
                     displayPlayerFour();
